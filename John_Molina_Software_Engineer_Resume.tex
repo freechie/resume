@@ -1,0 +1,190 @@
+%-------------------------
+% Software Engineer resume for John R. Molina
+% Template: Jake Gutierrez / sb2nov resume (MIT License)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\footskip}{0pt}
+
+% Jake template margins without the fullpage package (not in BasicTeX)
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\evensidemargin}{-0.5in}
+\setlength{\textwidth}{7.5in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.8in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Jake section rule without titlesec
+\newcommand{\resumeSection}[1]{
+  \par\vspace{2pt}
+  {\large\scshape #1}\par\vspace{1pt}
+  \color{black}\hrule\vspace{3pt}
+}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item\vspace{2pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newenvironment{resumeSubHeadingList}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0.15in}
+    \setlength{\labelwidth}{0pt}
+    \setlength{\labelsep}{0pt}
+    \setlength{\itemindent}{0pt}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+  }
+}{\end{list}}
+
+\newenvironment{resumeItemList}{
+  \begin{list}{\raisebox{0.15ex}{\tiny$\bullet$}}{
+    \setlength{\leftmargin}{0.25in}
+    \setlength{\labelwidth}{0.10in}
+    \setlength{\labelsep}{0.06in}
+    \setlength{\itemindent}{0pt}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+  }
+}{\end{list}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{resumeSubHeadingList}}
+\newcommand{\resumeSubHeadingListEnd}{\end{resumeSubHeadingList}}
+\newcommand{\resumeItemListStart}{\begin{resumeItemList}}
+\newcommand{\resumeItemListEnd}{\end{resumeItemList}\vspace{1pt}}
+
+\begin{document}
+
+\hypersetup{
+  pdftitle={John Molina Software Engineer Resume},
+  pdfauthor={John R. Molina},
+  pdfsubject={Software engineering resume},
+  pdfkeywords={Software Engineer, Python, Django, React, TypeScript, PostgreSQL}
+}
+
+\begin{center}
+    \textbf{\LARGE John R. Molina} \\ \vspace{1pt}
+    \small Little Ferry, NJ $|$ (551) 404-7605 $|$
+    \href{mailto:jrm90@me.com}{\underline{jrm90@me.com}} $|$
+    \href{https://linkedin.com/in/johnrmolina}{\underline{linkedin.com/in/johnrmolina}} $|$
+    \href{https://github.com/freechie}{\underline{github.com/freechie}} $|$
+    \href{https://freechie.github.io}{\underline{freechie.github.io}}
+\end{center}
+
+
+\resumeSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Montclair State University}{Montclair, NJ}
+      {Bachelor of Science in Computer Science}{2024}
+  \resumeSubHeadingListEnd
+  {\small Continuing Education: MIT OpenCourseWare 6.006 Introduction to Algorithms; Abdul Bari C/C++ Data Structures and Algorithms\par}
+
+
+\resumeSection{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Volunteer Web and Technical Lead}{2019 -- Present}
+      {Yeshe Nyingpo, Inc.}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Maintain one public website and digital operations for a nonprofit community, supporting content updates, analytics, Mailchimp campaigns, SEO, and 700+ member records.}
+        \resumeItem{Gather requirements and evaluate options for migrating away from Wix and spreadsheet workflows, translating stakeholder needs into data, reporting, content, and support requirements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Development Assistant, Data Management Group}{Dec. 2017 -- Aug. 2022}
+      {Columbia University, Office of Alumni and Development}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Wrote SQL queries and supported Python, SSIS, MS SSRS, and Power BI workflows across 5M+ Athena/Oracle CRM records for fundraising and data-management stakeholders.}
+        \resumeItem{Validated ETL and data-migration workflows through field mapping, nightly import checks, exception handling, post-load reconciliation, and documentation.}
+        \resumeItem{Translated 200-300 weekly Salesforce tickets into reporting and troubleshooting work while helping process thousands of duplicates, correct hundreds of thousands of records, and cut stale production records from about 40\% to 3\% by 2022; that cleanup supported \href{https://giving.columbia.edu/campaign-impact}{The Columbia Commitment} from more than \$2B and about 100,000 donors at the 2017 launch to \$5.6B, 199,000 donors, and 160,000 engaged alumni at close.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Donor and Database Relations Associate}{Feb. 2016 -- Aug. 2017}
+      {Parkinson's Foundation}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Administered Raiser's Edge 7 donor records, processed 300+ daily gifts, and produced acknowledgment, batch, and gift-summary reports with quality checks.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\resumeSection{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/freechie/portfolio-django}{\textbf{Portfolio Website Platform}} $|$ \emph{Python, Django REST Framework, React, Wagtail CMS, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered a Django/Wagtail portfolio and blog platform with 8 application-defined models/page types, REST project endpoints, Django admin/CMS workflows, and Docker.}
+            \resumeItem{Hardened public-facing routes and forms with rate limiting, CAPTCHA, CSP, CSRF/session hardening, HSTS/security headers, and 18 Django/Wagtail tests.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/freechie/fusion-manaba}{\textbf{Fusion Manaba E-Commerce Platform}} $|$ \emph{Next.js, TypeScript, Prisma ORM, PostgreSQL, REST API}}{}
+          \resumeItemListStart
+            \resumeItem{Built a WIP e-commerce application with Next.js, TypeScript, PostgreSQL, Prisma ORM, 2 Prisma models, catalog workflows, and a cart API for checkout preparation.}
+            \resumeItem{Added 9 Playwright API/browser tests for cart mutations, cookie persistence, unavailable products, failed add states, and CSP/security-header behavior.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/freechie/dotfiles}{\textbf{Cross-Platform Dotfiles Automation}} $|$ \emph{Bash, BATS, macOS, Ubuntu, GitHub Actions}}{}
+          \resumeItemListStart
+            \resumeItem{Built 80+ BATS tests for macOS/Ubuntu install flows, dry runs, idempotence, symlink behavior, syntax checks, bootstrap paths, CI smoke tests, and repo hygiene.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\resumeSection{Technical Skills}
+ \resumeSubHeadingListStart
+    \item\small{
+     \textbf{Languages}{: Python, TypeScript, JavaScript, SQL, Java, C/C++, Bash, HTML/CSS} \\
+     \textbf{Frameworks}{: Django, Django REST Framework, React, Next.js, Node.js, Wagtail CMS, Prisma ORM} \\
+     \textbf{Databases}{: PostgreSQL, Oracle/Athena, SQL Server, SQLite, REST APIs, Data Modeling, ETL, Data Validation} \\
+     \textbf{Tools}{: Git, Docker, GitHub Actions, Postman, Pytest, Django TestCase, WagtailPageTests, Playwright}
+    }
+ \resumeSubHeadingListEnd
+
+
+\end{document}
